@@ -116,6 +116,19 @@ class MyApp extends StatelessWidget {
                   ),
                   ),
               ),
+              SizedBox(height: 5,),
+              // Customer border Radius Card
+              Card(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadiusGeometry.circular(30.0),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text("Custom border Radius Card", style: TextStyle(fontSize: 14.0)
+                  ),
+                  ),
+              ),
+              SizedBox(height: 5,),
 
               //  CARD ABOUT ME 
               const Card(
