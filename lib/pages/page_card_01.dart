@@ -15,11 +15,15 @@ class MyApp extends StatelessWidget {
               padding: const EdgeInsets.all(20.0),
               child: const Column(
                 children: [
-                  Text("text",
-                    style: TextStyle(
-                      fontSize: 20.0,
+                  Card(
+                    color: Colors.red,
+                    child: Text("text",
+                      style: TextStyle(
+                        fontSize: 16.0,
+                      ),
                     ),
-                  ),
+
+                  )
                 ],
               ),
             ),
