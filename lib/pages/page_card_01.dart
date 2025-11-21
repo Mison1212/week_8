@@ -80,7 +80,7 @@ class MyApp extends StatelessWidget {
                         ),
                         child: const CircleAvatar(
                           radius: 50,
-                          backgroundImage: AssetImage("assets/profile.png"),
+                          backgroundImage: AssetImage("assset/images/hacker.png"),
                         ),
                       ),
 
