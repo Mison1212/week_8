@@ -64,21 +64,55 @@ class MyApp extends StatelessWidget {
                     // contoh memotong gradient melengkung
                     //dan jika tidak di gunakan maka akan menjadi kotak
                     clipBehavior: Clip.antiAlias,
-                    child: Container(
-                      decoration: const BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topRight,
-                          end: Alignment.bottomLeft,
-                          colors: [Colors.blue,Colors.red],
-                        ),
-                      ),
-                      child: const Text("text",
-                        style: TextStyle(
-                          fontSize: 20.0,
-                        ),
-                      ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        // decoration: const BoxDecoration(
+                        //   gradient: LinearGradient(
+                        //     begin: Alignment.topRight,
+                        //     end: Alignment.bottomLeft,
+                        //     colors: [Colors.blue,Colors.red],
+                        children: [
+                          // container di circle avatar + image
+                          // text name 
+                          // container denga BoxDecoration Circular
+                          // dengan text "flutter developer"
+                          // Row dengan 3 Row
+                          Container(
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(color: Colors.white, width: 4),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withValues(alpha: 0.2),
+                                  blurRadius: 10,
+                                  // offset (x,y) positif ke kanan
+                                )
+                              ],
+                              ),
+                            //circle bisa kita tabs untuk sort-cut
+                            // "circle"
+                            child: CircleAvatar(
+                              radius: 60,
+                              backgroundImage: AssetImage("assetName"),
+                            ),
+                          ),
+                          SizedBox(height: 5,),
+                          // text name 
+                          Text("Mison",
+                          style: TextStyle(
+                            fontSize: 26.0,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),)
+                          //container dengan boxdecoration circular
+                          // dengan text "flutter developer"
+                          // Row dengan 3 row
+                        ],
+                          ),
                     ),
-                   ),
+                      ),
+                      
 
                 ],
               ),
