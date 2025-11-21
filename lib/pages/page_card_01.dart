@@ -40,6 +40,21 @@ class MyApp extends StatelessWidget {
                 child: Text("Tinggi bayangan shadow", style: TextStyle(fontSize: 12.0),
                 ),
               ),
+              SizedBox(height: 5,),
+              
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.yellow,
+                  borderRadius: BorderRadius.circular(16),
+                  boxShadow: [
+                    BoxShadow(color: Colors.black26, blurRadius: 10, offset: Offset(0, 4),
+                    ),
+                  ],
+                ),
+                child: Text("Tinggi bayangan Shadow",style: TextStyle(fontSize: 12.0),
+                ),
+              ),
+              SizedBox(height: 5,),
 
               //  CARD ABOUT ME 
               const Card(
