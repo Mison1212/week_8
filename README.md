@@ -1,12 +1,15 @@
 # week_8_card
 
-A new Flutter project.
+<p align= "center">
+    <img src="assset/images/Screenshot 2025-11-21 223932.png" alt="Onboarding Screen" width="300">
+</p>
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
+## Nama    : Mison Wenda
+## NIM     : 1123150103
+## Jurusan : Teknik Informatika
+## Matkul  : Mobile App
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
