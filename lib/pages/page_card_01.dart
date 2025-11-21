@@ -13,9 +13,9 @@ class MyApp extends StatelessWidget {
           body: SingleChildScrollView(
             child: Container(
               padding: const EdgeInsets.all(20.0),
-              child: const Column(
+              child: Column(
                 children: [
-                  Card(
+                  const Card(
                     color: Colors.red,
                     child:Text("Test",
                       style: TextStyle(
@@ -24,13 +24,13 @@ class MyApp extends StatelessWidget {
 
                     ),
                   ),
-                   SizedBox(height: 5 ),
+                   const SizedBox(height: 5 ),
 
-                   Card(
+                   const Card(
                     elevation: 8,
                     child: Padding(
                       //padding
-                      padding: const EdgeInsets.all(20.0),
+                      padding:  EdgeInsets.all(20.0),
                       //membuat Column  untuk menempatkan text title 
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -55,7 +55,30 @@ class MyApp extends StatelessWidget {
 
                       ),
                     ),
-                   )
+                   ),
+                   const SizedBox(height: 5),
+
+                   Card(
+                    elevation: 8,
+                    shadowColor: Colors.red,
+                    // contoh memotong gradient melengkung
+                    //dan jika tidak di gunakan maka akan menjadi kotak
+                    clipBehavior: Clip.antiAlias,
+                    child: Container(
+                      decoration: const BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.topRight,
+                          end: Alignment.bottomLeft,
+                          colors: [Colors.blue,Colors.red],
+                        ),
+                      ),
+                      child: const Text("text",
+                        style: TextStyle(
+                          fontSize: 20.0,
+                        ),
+                      ),
+                    ),
+                   ),
 
                 ],
               ),
