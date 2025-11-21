@@ -87,12 +87,23 @@ class MyApp extends StatelessWidget {
                             
               ),
               SizedBox(height: 5,),
-              
+
               // card clip anti alias
               Card(
                 clipBehavior: Clip.antiAlias,
                 child: Text("Anti alias clip Card", style: TextStyle(fontSize: 14.0),
                 ),
+              ),
+              SizedBox(height: 5,),
+
+                //Semantic true 
+                Card(
+                  semanticContainer: true,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text("Semantic true", style: TextStyle(fontSize: 14.0),
+                  ),
+                  ),
               ),
 
               //  CARD ABOUT ME 
