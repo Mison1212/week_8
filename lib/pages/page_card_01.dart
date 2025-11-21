@@ -18,6 +18,14 @@ class MyApp extends StatelessWidget {
               ),
               const SizedBox(height: 5),
 
+              const Card(
+
+                color: Colors.red,
+                child: Text("Card with color", style: TextStyle(fontSize: 16.0)),
+               
+              ),
+              
+
               //  CARD ABOUT ME 
               const Card(
                 elevation: 8,
