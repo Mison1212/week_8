@@ -32,6 +32,14 @@ class MyApp extends StatelessWidget {
                 ),
                 child: Text("Container with color", style: TextStyle(fontSize: 16.0 )),
               ),
+              SizedBox(height: 5,),
+
+              Card(
+                elevation: 8, //Tinggi bayangan
+                color: Colors.yellow,
+                child: Text("Tinggi bayangan shadow", style: TextStyle(fontSize: 12.0),
+                ),
+              ),
 
               //  CARD ABOUT ME 
               const Card(
