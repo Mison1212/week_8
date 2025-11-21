@@ -86,6 +86,14 @@ class MyApp extends StatelessWidget {
                 child: Text("Border tidak menimpa konten",style: TextStyle(fontSize: 10.0)),
                             
               ),
+              SizedBox(height: 5,),
+              
+              // card clip anti alias
+              Card(
+                clipBehavior: Clip.antiAlias,
+                child: Text("Anti alias clip Card", style: TextStyle(fontSize: 14.0),
+                ),
+              ),
 
               //  CARD ABOUT ME 
               const Card(
