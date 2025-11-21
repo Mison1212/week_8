@@ -55,13 +55,24 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 5,),
-
+              // Shape bingkai persegi panjang 
               Card(
                 shape: RoundedRectangleBorder(borderRadius: BorderRadiusGeometry.circular(15.0)),
                 child: Padding(padding: const EdgeInsets.all(8.0),
                 child: Text("Shape bingkai persegi panjang",style: TextStyle(fontSize: 12.0),
                 ),
                 ),
+              ),
+              SizedBox(height: 5,),
+
+              // card untuk margin
+              Card(
+                margin: EdgeInsets.all(16.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text("Margin Crad", style: TextStyle(fontSize: 10.0),
+                  ),
+                  ),
               ),
               SizedBox(height: 5,),
 
