@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 5,),
-              
+
               Container(
                 decoration: BoxDecoration(
                   color: Colors.yellow,
@@ -52,6 +52,15 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
                 child: Text("Tinggi bayangan Shadow",style: TextStyle(fontSize: 12.0),
+                ),
+              ),
+              SizedBox(height: 5,),
+
+              Card(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadiusGeometry.circular(15.0)),
+                child: Padding(padding: const EdgeInsets.all(8.0),
+                child: Text("Shape bingkai persegi panjang",style: TextStyle(fontSize: 12.0),
+                ),
                 ),
               ),
               SizedBox(height: 5,),
