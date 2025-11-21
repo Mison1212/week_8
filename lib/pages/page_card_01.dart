@@ -24,7 +24,14 @@ class MyApp extends StatelessWidget {
                 child: Text("Card with color", style: TextStyle(fontSize: 16.0)),
                
               ),
-              
+              // container with color
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12.0),
+                  color: Colors.red,
+                ),
+                child: Text("Container with color", style: TextStyle(fontSize: 16.0 )),
+              ),
 
               //  CARD ABOUT ME 
               const Card(
