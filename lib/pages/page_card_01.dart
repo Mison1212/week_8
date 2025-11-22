@@ -369,7 +369,7 @@ class MyApp extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
-                            // Expired 
+                            // Expiry date
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: const [
@@ -382,6 +382,26 @@ class MyApp extends StatelessWidget {
                                 ),
                                 Text(
                                   "12/2030",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            // CVV
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  "CVV",
+                                  style: TextStyle(
+                                    color: Colors.white70,
+                                    fontSize: 12,
+                                  ),
+                                ),
+                                Text(
+                                  "8769",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 16,
