@@ -267,6 +267,31 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
               ),
+              SizedBox(height: 5,),
+              // Logo Master Card menggunakan Stack:
+              Stack(
+                
+                children: [
+                  Container(
+                    width: 30,
+                    height: 30,
+                    decoration: const BoxDecoration(
+                      color: Color(0xFFEB001B),
+                      shape: BoxShape.circle,
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 15),
+                    width: 30,
+                    height: 30,
+                    decoration: const BoxDecoration(
+                      color: Color(0xFFF79E1B),
+                      shape: BoxShape.circle,
+                    ),
+                  ),
+                ],
+              ),
+              
             ],
           ),
         ),
