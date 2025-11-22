@@ -291,7 +291,17 @@ class MyApp extends StatelessWidget {
                   ),
                 ],
               ),
-              
+              // gambar logo credit Card dan Constless:
+              Row(
+                // Space beetween akan membuat sisi kanan dan sisi kiri 
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  //Chip Icon
+                  Icon(Icons.credit_card,color: Colors.white70,size: 32,),
+                  //Contactless Icon
+                  Icon(Icons.contactless,color: Colors.white54,size: 32,),
+                ],
+              ),
             ],
           ),
         ),
