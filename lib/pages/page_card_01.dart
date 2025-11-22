@@ -288,18 +288,30 @@ class MyApp extends StatelessWidget {
                       color: Color(0xFFF79E1B),
                       shape: BoxShape.circle,
                     ),
-                  ),
-                ],
-              ),
-              // gambar logo credit Card dan Constless:
-              Row(
-                // Space beetween akan membuat sisi kanan dan sisi kiri 
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  //Chip Icon
-                  Icon(Icons.credit_card,color: Colors.white70,size: 32,),
-                  //Contactless Icon
-                  Icon(Icons.contactless,color: Colors.white54,size: 32,),
+                  ), 
+                  // container card latihan
+                  Container(
+                    padding: const EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF1D3B66),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    width: double.infinity,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            // chip Icon
+                            const Icon(Icons.credit_card,color: Colors.white70,size: 32),
+                            // contactless Icon
+                            const Icon(Icons.contactless,color: Colors.white54,size: 32),
+                          ],
+                        )
+                      ],
+                    ),
+                  )
                 ],
               ),
             ],
