@@ -19,10 +19,11 @@ class MyApp extends StatelessWidget {
               const SizedBox(height: 5),
 
               const Card(
-
                 color: Colors.red,
-                child: Text("Card with color", style: TextStyle(fontSize: 16.0)),
-               
+                child: Text(
+                  "Card with color",
+                  style: TextStyle(fontSize: 16.0),
+                ),
               ),
               // container with color
               Container(
@@ -30,93 +31,115 @@ class MyApp extends StatelessWidget {
                   borderRadius: BorderRadius.circular(12.0),
                   color: Colors.red,
                 ),
-                child: Text("Container with color", style: TextStyle(fontSize: 16.0 )),
+                child: Text(
+                  "Container with color",
+                  style: TextStyle(fontSize: 16.0),
+                ),
               ),
-              SizedBox(height: 5,),
+              SizedBox(height: 5),
 
               Card(
                 elevation: 8, //Tinggi bayangan
                 color: Colors.yellow,
-                child: Text("Tinggi bayangan shadow", style: TextStyle(fontSize: 12.0),
+                child: Text(
+                  "Tinggi bayangan shadow",
+                  style: TextStyle(fontSize: 12.0),
                 ),
               ),
-              SizedBox(height: 5,),
+              SizedBox(height: 5),
 
               Container(
                 decoration: BoxDecoration(
                   color: Colors.yellow,
                   borderRadius: BorderRadius.circular(16),
                   boxShadow: [
-                    BoxShadow(color: Colors.black26, blurRadius: 10, offset: Offset(0, 4),
+                    BoxShadow(
+                      color: Colors.black26,
+                      blurRadius: 10,
+                      offset: Offset(0, 4),
                     ),
                   ],
                 ),
-                child: Text("Tinggi bayangan Shadow",style: TextStyle(fontSize: 12.0),
+                child: Text(
+                  "Tinggi bayangan Shadow",
+                  style: TextStyle(fontSize: 12.0),
                 ),
               ),
-              SizedBox(height: 5,),
-              // Shape bingkai persegi panjang 
+              SizedBox(height: 5),
+              // Shape bingkai persegi panjang
               Card(
-                shape: RoundedRectangleBorder(borderRadius: BorderRadiusGeometry.circular(15.0)),
-                child: Padding(padding: const EdgeInsets.all(8.0),
-                child: Text("Shape bingkai persegi panjang",style: TextStyle(fontSize: 12.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadiusGeometry.circular(15.0),
                 ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    "Shape bingkai persegi panjang",
+                    style: TextStyle(fontSize: 12.0),
+                  ),
                 ),
               ),
-              SizedBox(height: 5,),
+              SizedBox(height: 5),
 
               // card untuk margin
               Card(
                 margin: EdgeInsets.all(16.0),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Text("Margin Card", style: TextStyle(fontSize: 10.0),
-                  ),
-                  ),
+                  child: Text("Margin Card", style: TextStyle(fontSize: 10.0)),
+                ),
               ),
-              SizedBox(height: 5,),
-              
+              SizedBox(height: 5),
+
               // border tidak menimpa konten
               Card(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadiusGeometry.circular(16),
-                  side: BorderSide(color: Colors.red,width: 2),
+                  side: BorderSide(color: Colors.red, width: 2),
                 ),
-                borderOnForeground: true,// false
-                child: Text("Border tidak menimpa konten",style: TextStyle(fontSize: 10.0)),
-                            
+                borderOnForeground: true, // false
+                child: Text(
+                  "Border tidak menimpa konten",
+                  style: TextStyle(fontSize: 10.0),
+                ),
               ),
-              SizedBox(height: 5,),
+              SizedBox(height: 5),
 
               // card clip anti alias
               Card(
                 clipBehavior: Clip.antiAlias,
-                child: Text("Anti alias clip Card", style: TextStyle(fontSize: 14.0),
+                child: Text(
+                  "Anti alias clip Card",
+                  style: TextStyle(fontSize: 14.0),
                 ),
               ),
-              SizedBox(height: 5,),
+              SizedBox(height: 5),
 
-                //Semantic true 
-                Card(
-                  semanticContainer: true,
+              //Semantic true
+              Card(
+                semanticContainer: true,
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Text("Semantic true", style: TextStyle(fontSize: 14.0),
+                  child: Text(
+                    "Semantic true",
+                    style: TextStyle(fontSize: 14.0),
                   ),
-                  ),
+                ),
               ),
-              SizedBox(height: 5,),
+              SizedBox(height: 5),
 
-              // shadow color card             
+              // shadow color card
               Card(
                 shadowColor: Colors.red,
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Text("Shadow Color Card", style: TextStyle(fontSize: 14.0),
+                  child: Text(
+                    "Shadow Color Card",
+                    style: TextStyle(fontSize: 14.0),
                   ),
-                  ),
+                ),
               ),
-              SizedBox(height: 5,),
+              SizedBox(height: 5),
               // Customer border Radius Card
               Card(
                 shape: RoundedRectangleBorder(
@@ -124,13 +147,15 @@ class MyApp extends StatelessWidget {
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Text("Custom border Radius Card", style: TextStyle(fontSize: 14.0)
+                  child: Text(
+                    "Custom border Radius Card",
+                    style: TextStyle(fontSize: 14.0),
                   ),
-                  ),
+                ),
               ),
-              SizedBox(height: 5,),
+              SizedBox(height: 5),
 
-              //  CARD ABOUT ME 
+              //  CARD ABOUT ME
               const Card(
                 elevation: 8,
                 child: Padding(
@@ -184,15 +209,14 @@ class MyApp extends StatelessWidget {
                           shape: BoxShape.circle,
                           border: Border.all(color: Colors.white, width: 4),
                           boxShadow: [
-                            BoxShadow(
-                              color: Colors.black26,
-                              blurRadius: 10,
-                            ),
+                            BoxShadow(color: Colors.black26, blurRadius: 10),
                           ],
                         ),
                         child: const CircleAvatar(
                           radius: 50,
-                          backgroundImage: AssetImage("assset/images/hacker.png"),
+                          backgroundImage: AssetImage(
+                            "assset/images/hacker.png",
+                          ),
                         ),
                       ),
 
@@ -256,21 +280,26 @@ class MyApp extends StatelessWidget {
 
                   children: [
                     ListTile(
-                      leading: const Icon(Icons.install_desktop_rounded,size: 50.0,),
+                      leading: const Icon(
+                        Icons.install_desktop_rounded,
+                        size: 50.0,
+                      ),
                       title: Text("Belum ada judul"),
                       subtitle: Text("Lagu daerah setiap daerah"),
                     ),
                     Padding(
                       padding: EdgeInsets.all(16.0),
-                      child: Text('Card dapat diisi berbagai widget seperti text,' 'image, button, dan lainnya.'),
+                      child: Text(
+                        'Card dapat diisi berbagai widget seperti text,'
+                        'image, button, dan lainnya.',
                       ),
+                    ),
                   ],
                 ),
               ),
-              SizedBox(height: 5,),
+              SizedBox(height: 5),
               // Logo Master Card menggunakan Stack:
               Stack(
-                
                 children: [
                   Container(
                     width: 30,
@@ -288,7 +317,7 @@ class MyApp extends StatelessWidget {
                       color: Color(0xFFF79E1B),
                       shape: BoxShape.circle,
                     ),
-                  ), 
+                  ),
                   // container card latihan
                   Container(
                     padding: const EdgeInsets.all(20),
@@ -304,32 +333,67 @@ class MyApp extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
                             // chip Icon
-                            const Icon(Icons.credit_card,color: Colors.white70,size: 32),
+                            const Icon(
+                              Icons.credit_card,
+                              color: Colors.white70,
+                              size: 32,
+                            ),
                             // contactless Icon
-                            const Icon(Icons.contactless,color: Colors.white54,size: 32),
+                            const Icon(
+                              Icons.contactless,
+                              color: Colors.white54,
+                              size: 32,
+                            ),
                           ],
                         ),
-                        SizedBox(height: 30,),
+                        SizedBox(height: 30),
 
-                        // Nomor Card 
+                        // Nomor Card
                         const Text(
                           "1212 1414 1616 2020",
-                          style: TextStyle(fontSize: 24,
-                          letterSpacing: 3,
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          ),
-                          ),
-                          // Nama Pemilik
-                          const Text(
-                            "Mison Wenda",
-                            style: TextStyle(fontSize: 18,
+                          style: TextStyle(
+                            fontSize: 24,
+                            letterSpacing: 3,
                             color: Colors.white,
-                            ),
+                            fontWeight: FontWeight.w500,
                           ),
+                        ),
+                        // Nama Pemilik
+                        const Text(
+                          "Mison Wenda",
+                          style: TextStyle(fontSize: 18, color: Colors.white),
+                        ),
+                        SizedBox(height: 25),
+                        // logo master card
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            // Expired 
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  "Expiry Date",
+                                  style: TextStyle(
+                                    color: Colors.white70,
+                                    fontSize: 12,
+                                  ),
+                                ),
+                                Text(
+                                  "12/2030",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
                       ],
                     ),
-                  )
+                  ),
                 ],
               ),
             ],
@@ -354,10 +418,7 @@ class MyApp extends StatelessWidget {
         const SizedBox(height: 2),
         Text(
           label,
-          style: const TextStyle(
-            fontSize: 12,
-            color: Colors.white70,
-          ),
+          style: const TextStyle(fontSize: 12, color: Colors.white70),
         ),
       ],
     );
@@ -365,10 +426,6 @@ class MyApp extends StatelessWidget {
 
   //GARIS PEMBATAS VERTICAL
   Widget _verticalDivider() {
-    return Container(
-      height: 25,
-      width: 1.2,
-      color: Colors.white70,
-    );
+    return Container(height: 25, width: 1.2, color: Colors.white70);
   }
 }
