@@ -308,7 +308,19 @@ class MyApp extends StatelessWidget {
                             // contactless Icon
                             const Icon(Icons.contactless,color: Colors.white54,size: 32),
                           ],
-                        )
+                        ),
+                        SizedBox(height: 30,),
+
+                        // Nomor Card 
+                        const Text(
+                          "1212 1414 1616 2020",
+                          style: TextStyle(fontSize: 24,
+                          letterSpacing: 3,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w500,
+                          ),
+                          ),
+                          
                       ],
                     ),
                   )
