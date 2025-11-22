@@ -320,7 +320,13 @@ class MyApp extends StatelessWidget {
                           fontWeight: FontWeight.w500,
                           ),
                           ),
-                          
+                          // Nama Pemilik
+                          const Text(
+                            "Mison Wenda",
+                            style: TextStyle(fontSize: 18,
+                            color: Colors.white,
+                            ),
+                          ),
                       ],
                     ),
                   )
