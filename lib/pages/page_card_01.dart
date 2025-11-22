@@ -247,6 +247,26 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
+              Card(
+                // Card with ListTile
+                elevation: 5.0,
+                margin: EdgeInsets.all(16.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+
+                  children: [
+                    ListTile(
+                      leading: const Icon(Icons.install_desktop_rounded,size: 50.0,),
+                      title: Text("Belum ada judul"),
+                      subtitle: Text("Lagu daerah setiap daerah"),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.all(16.0),
+                      child: Text('Card dapat diisi berbagai widget seperti text,' 'image, button, dan lainnya.'),
+                      ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
