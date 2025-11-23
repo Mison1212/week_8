@@ -298,123 +298,144 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 5),
-              // Logo Master Card menggunakan Stack:
-              Stack(
-                children: [
-                  Container(
-                    width: 30,
-                    height: 30,
-                    decoration: const BoxDecoration(
-                      color: Color(0xFFEB001B),
-                      shape: BoxShape.circle,
-                    ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.only(left: 15),
-                    width: 30,
-                    height: 30,
-                    decoration: const BoxDecoration(
-                      color: Color(0xFFF79E1B),
-                      shape: BoxShape.circle,
-                    ),
-                  ),
-                  // container card latihan
-                  Container(
-                    padding: const EdgeInsets.all(20),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFF1D3B66),
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    width: double.infinity,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+
+              // container card latihan
+              Container(
+                padding: const EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                  color: const Color(0xFF1D3B66),
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                width: double.infinity,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            // chip Icon
-                            const Icon(
-                              Icons.credit_card,
-                              color: Colors.white70,
-                              size: 32,
+                        // chip Icon
+                        const Icon(
+                          Icons.credit_card,
+                          color: Colors.white70,
+                          size: 32,
+                        ),
+                        // contactless Icon
+                        const Icon(
+                          Icons.contactless,
+                          color: Colors.white54,
+                          size: 32,
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 30),
+
+                    // Nomor Card
+                    const Text(
+                      "1212 1414 1616 2020",
+                      style: TextStyle(
+                        fontSize: 24,
+                        letterSpacing: 3,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    // Nama Pemilik
+                    const Text(
+                      "Mison Wenda",
+                      style: TextStyle(fontSize: 18, color: Colors.white),
+                    ),
+                    SizedBox(height: 25),
+                    // logo master card
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        // Expiry Date
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: const [
+                            Text(
+                              "Expiry Date",
+                              style: TextStyle(
+                                color: Colors.white70,
+                                fontSize: 12,
+                              ),
                             ),
-                            // contactless Icon
-                            const Icon(
-                              Icons.contactless,
-                              color: Colors.white54,
-                              size: 32,
+                            SizedBox(height: 2),
+                            Text(
+                              "12/2030",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                              ),
                             ),
                           ],
                         ),
-                        SizedBox(height: 30),
 
-                        // Nomor Card
-                        const Text(
-                          "1212 1414 1616 2020",
-                          style: TextStyle(
-                            fontSize: 24,
-                            letterSpacing: 3,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w500,
-                          ),
+                        // CVV
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: const [
+                            Text(
+                              "CVV",
+                              style: TextStyle(
+                                color: Colors.white70,
+                                fontSize: 12,
+                              ),
+                            ),
+                            SizedBox(height: 2),
+                            Text(
+                              "8769",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ],
                         ),
-                        // Nama Pemilik
-                        const Text(
-                          "Mison Wenda",
-                          style: TextStyle(fontSize: 18, color: Colors.white),
-                        ),
-                        SizedBox(height: 25),
-                        // logo master card
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.end,
+
+                        // Logo Mastercard
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            // Expiry date
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: const [
-                                Text(
-                                  "Expiry Date",
-                                  style: TextStyle(
-                                    color: Colors.white70,
-                                    fontSize: 12,
+                            Stack(
+                              children: [
+                                Container(
+                                  width: 32,
+                                  height: 32,
+                                  decoration: const BoxDecoration(
+                                    color: Color(0xFFEB001B),
+                                    shape: BoxShape.circle,
                                   ),
                                 ),
-                                Text(
-                                  "12/2030",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 16,
+                                Container(
+                                  margin: const EdgeInsets.only(left: 16),
+                                  width: 32,
+                                  height: 32,
+                                  decoration: const BoxDecoration(
+                                    color: Color(0xFFF79E1B),
+                                    shape: BoxShape.circle,
                                   ),
                                 ),
                               ],
                             ),
-                            // CVV
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: const [
-                                Text(
-                                  "CVV",
-                                  style: TextStyle(
-                                    color: Colors.white70,
-                                    fontSize: 12,
-                                  ),
-                                ),
-                                Text(
-                                  "8769",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 16,
-                                  ),
-                                ),
-                              ],
+                            const SizedBox(height: 4),
+                            const Text(
+                              "Mastercard",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                                fontWeight: FontWeight.w500,
+                              ),
                             ),
                           ],
                         ),
                       ],
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ],
           ),
