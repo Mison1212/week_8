@@ -172,7 +172,7 @@ class MyApp extends StatelessWidget {
                       ),
                       SizedBox(height: 5),
                       Text(
-                        "BALI, KOMPAS.com – Seorang turis asal China meninggal dunia setelah mengalami muntah hebat dan menggigil...",
+                        "BALI, KOMPAS.com Seorang turis asal China meninggal dunia setelah mengalami muntah hebat dan menggigil...",
                         style: TextStyle(fontSize: 12.0),
                         textAlign: TextAlign.justify,
                       ),
@@ -215,7 +215,7 @@ class MyApp extends StatelessWidget {
                         child: const CircleAvatar(
                           radius: 50,
                           backgroundImage: AssetImage(
-                            "assset/images/hacker.png",
+                            "assset/images/user_madrid.jpg",
                           ),
                         ),
                       ),
@@ -311,7 +311,7 @@ class MyApp extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         // chip Icon
                         const Icon(
