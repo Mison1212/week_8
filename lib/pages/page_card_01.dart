@@ -339,16 +339,45 @@ class MyApp extends StatelessWidget {
                         fontWeight: FontWeight.w500,
                       ),
                     ),
+                    SizedBox(height: 30),
+
                     // Nama Pemilik
-                    const Text(
-                      "Mison Wenda",
-                      style: TextStyle(fontSize: 18, color: Colors.white),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          "Mison Wenda",
+                          style: TextStyle(fontSize: 18, color: Colors.white),
+                        ),
+                        Stack(
+                          children: [
+                            Container(
+                              width: 32,
+                              height: 32,
+                              decoration: const BoxDecoration(
+                                color: Color(0xFFEB001B),
+                                shape: BoxShape.circle,
+                              ),
+                            ),
+                            Container(
+                              margin: const EdgeInsets.only(left: 16),
+                              width: 32,
+                              height: 32,
+                              decoration: const BoxDecoration(
+                                color: Color(0xFFF79E1B),
+                                shape: BoxShape.circle,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
-                    SizedBox(height: 25),
+
+                    SizedBox(height: 15),
                     // logo master card
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.end,
+                      // crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         // Expiry Date
                         Column(
@@ -395,38 +424,18 @@ class MyApp extends StatelessWidget {
                             ),
                           ],
                         ),
-
+                        SizedBox(width: 128),
                         // Logo Mastercard
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Stack(
-                              children: [
-                                Container(
-                                  width: 32,
-                                  height: 32,
-                                  decoration: const BoxDecoration(
-                                    color: Color(0xFFEB001B),
-                                    shape: BoxShape.circle,
-                                  ),
-                                ),
-                                Container(
-                                  margin: const EdgeInsets.only(left: 16),
-                                  width: 32,
-                                  height: 32,
-                                  decoration: const BoxDecoration(
-                                    color: Color(0xFFF79E1B),
-                                    shape: BoxShape.circle,
-                                  ),
-                                ),
-                              ],
-                            ),
+                           
                             const SizedBox(height: 4),
                             const Text(
                               "Mastercard",
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 14,
+                                fontSize: 18,
                                 fontWeight: FontWeight.w500,
                               ),
                             ),
